@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Egenin Sesi</string>
+    <string name="title_home">Anasayfa</string>
+    <string name="title_authors">Yazarlar</string>
+    <string name="title_contact">İletişim</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="kunye_text"><b>İMTİYAZ SAHİBİ</b>\n\n
+        Berfin Kara\n\n<b>GENEL YAYIN YÖNETMENİ</b>\n\nSinan KARA \n\n<b>SORUMLU MÜDÜR</b>\n\nUlaş Üstündağ\n\n
+
+<b>MUHABİR</b> \n\nMustafa Gezğin\n\n
+
+Ege\'nin Sesi internet sitesinde yayınlanan yazı ve yorumlardan yazarları sorumludur.\n\n
+İzin alınmadan haber ve fotoğraflar yayınlanamaz.</string>
+
+    <string name="contact"><b>E-posta Adreslerimiz:</b>\n\n
+egeninsesi853@gmail.com\n\n
+
+        <b>Telefon:</b>\n\n
+0 (536) 402 69 50\n\n
+
+        <b>Adres:</b>\n\n
+857 sokak no:17 Anadolu İşhanı Kat:7 Daire:28 Konak/İzmir</string>
+
+    <string name="html_css_style">
+        ""&lt;style type="text/css"&gt;
+            iframe {
+                display: block;
+                max-width:100%;
+                margin-top:10px;
+                margin-bottom:10px;
+            }
+
+            img {
+                height: auto !important;
+                max-width: 100% !important;
+            }
+            span {
+                height: auto !important;
+                max-width: 100% !important;
+            }
+
+            div {
+                height: auto !important;
+                max-width: 100% !important;
+            }
+        &lt;/style&gt;&lt;/head&gt;""
+    </string>
+    <string name="shortcut_short_label">shortcurtlabel</string>
+    <string name="shortcut_long_label">shorcut long</string>
+
+</resources>

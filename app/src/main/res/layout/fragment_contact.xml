@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/kunye"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kunye_text"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/contactInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contact"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kunye"
+        android:paddingBottom="10dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <ImageView
+            android:id="@+id/button_facebook"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/facebook"
+            android:clickable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/button_twitter"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/twitter"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            app:layout_constraintStart_toEndOf="@+id/button_facebook"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/button_youtube"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/youtube"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            app:layout_constraintStart_toEndOf="@+id/button_twitter"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

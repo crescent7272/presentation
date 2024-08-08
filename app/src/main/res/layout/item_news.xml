@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="news"
+            type="com.egeninsesi.news.data.model.News" />
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mylayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingEnd="5dp"
+        >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintDimensionRatio="74:51"
+            android:background="#e3e3e3"
+            android:fitsSystemWindows="true"
+            app:imageUrl="@{news.imagePath}"
+            app:isHeadline="@{false}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:textSize="16sp"
+            android:background="#e3e3e3"
+            android:padding="5dp"
+            android:minLines="3"
+            android:maxLines="3"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:text="@{news.title}"
+            android:scrollHorizontally="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
